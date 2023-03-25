@@ -1,13 +1,17 @@
 # Compile: 
 $ gcc Scheduler.c -o Scheduler.exe
+
 # Execute: 
 $ Scheduler.exe < input1.txt > out1.txt | Scheduler.exe < input2.txt > out2.txt
 
-Subject:  C programming
+# Subject:  
+C programming
 
-Problem:  Building and simulating a  Round-Robin  scheduler using linked list and queue data structures
+# Problem:  
+Building and simulating a  Round-Robin  scheduler using linked list and queue data structures
 
-Description: In time shared systems, tasks submitted to the system are assigned to a limited  number of processors for execution in a time shared manner. 
+# Description: 
+In time shared systems, tasks submitted to the system are assigned to a limited  number of processors for execution in a time shared manner. 
 Time allocation of processors to tasks is known as scheduling  problem. One of the most prevalent scheduling policy employed in embedded systems is Round-Robin. 
 The policy always executes the next task from the waiting task list (implemented as a queue) in a circular fashion. 
 In this assignment, you are expected to write a C console program simulating a Round-Robin scheduler on a single processor system.  
@@ -22,7 +26,9 @@ The functionalities and constraints are specified below.
 
 Program: Your program should accept commands from the command prompt in a loop.
 
-Commands:  (The format is as follows)
+# Commands:  
+(The format is as follows)
+
 •  Start a new task :           
     > SNT task_name runtime
 •  Simulate k  units :         
@@ -39,10 +45,3 @@ Commands:  (The format is as follows)
     > ECTS
 •  Quit the program:                
     > QUIT
-
-Important Notes:
-•  Use only C constructs, do not use C++. So, for instance, instead of class, use struct.
-•  Never use ready-made data structures from any library.
-•  Use linked list data structure for implementing the task list and completed tasks queue.  
-•  You are expected to use pointers.   
-•  Hence, array based implementations will be awarded marginally.
