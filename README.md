@@ -1,5 +1,7 @@
-# Compile: $ gcc Scheduler.c -o Scheduler.exe
-# Execute: $ Scheduler.exe < input1.txt > out1.txt | Scheduler.exe < input2.txt > out2.txt
+# Compile: 
+$ gcc Scheduler.c -o Scheduler.exe
+# Execute: 
+$ Scheduler.exe < input1.txt > out1.txt | Scheduler.exe < input2.txt > out2.txt
 
 Subject:  C programming
 
