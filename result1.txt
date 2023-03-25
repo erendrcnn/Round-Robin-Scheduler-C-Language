@@ -1,0 +1,33 @@
+output1 : NULL
+output2 : NULL
+output3 : TaskC -> TaskB -> TaskA -> TaskD -> TaskE
+output4 : TaskC -> TaskB -> TaskA -> TaskD -> TaskE -> TaskG -> TaskF
+output5 : NULL
+
+> Task 'TaskA' is created with runtime 5.
+> Task 'TaskB' is created with runtime 3.
+> Task 'TaskC' is created with runtime 2.
+> System time: 0 units
+> 5 units of time simulated.
+> Total idle time: 0 units
+> No completed tasks
+> Completed tasks queue is dumped to output1.txt.
+> Completed tasks queue is emptied.
+> Completed tasks queue is dumped to output2.txt.
+> 4 units of time simulated.
+> Total idle time: 0 units
+> Task 'TaskD' is created with runtime 1.
+> Task 'TaskE' is created with runtime 2.
+> 5 units of time simulated.
+> Completed tasks queue is dumped to output3.txt.
+> Most recently completed task: TaskE
+> 2 units of time simulated.
+> Task 'TaskF' is created with runtime 4.
+> Task 'TaskG' is created with runtime 3.
+> 8 units of time simulated.
+> Completed tasks queue is dumped to output4.txt.
+> Total idle time: 3 units
+> 4 units of time simulated.
+> Total idle time: 4 units
+> Completed tasks queue is emptied.
+> Completed tasks queue is dumped to output5.txt.

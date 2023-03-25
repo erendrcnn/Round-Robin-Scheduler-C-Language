@@ -1,0 +1,22 @@
+SNT TaskA 5
+SNT TaskB 3
+S 2
+SNT TaskC 4
+DST
+DCTQ output_DCTQ_1.txt
+DIMRCT 
+S 3
+DIMRCT
+S 1
+DCTQ output_DCTQ_2.txt
+S 1
+S 2
+DCTQ output_DCTQ_3.txt
+DIMRCT
+DST
+S 5
+DTIT
+DST
+DCTQ output_DCTQ_4.txt
+ECTS
+QUIT

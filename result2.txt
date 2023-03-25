@@ -1,0 +1,26 @@
+output_DCTQ_1 : NULL
+output_DCTQ_2 : NULL
+output_DCTQ_3 : TaskB
+output_DCTQ_4 : TaskB -> TaskA -> TaskC
+
+> Task 'TaskA' is created with runtime 5.
+> Task 'TaskB' is created with runtime 3.
+> 2 units of time simulated.
+> Task 'TaskC' is created with runtime 4.
+> System time: 2 units
+> Completed tasks queue is dumped to output_DCTQ_1.txt.
+> No completed tasks
+> 3 units of time simulated.
+> No completed tasks
+> 1 units of time simulated.
+> Completed tasks queue is dumped to output_DCTQ_2.txt.
+> 1 units of time simulated.
+> 2 units of time simulated.
+> Completed tasks queue is dumped to output_DCTQ_3.txt.
+> Most recently completed task: TaskB
+> System time: 9 units
+> 5 units of time simulated.
+> Total idle time: 1 units
+> System time: 12 units
+> Completed tasks queue is dumped to output_DCTQ_4.txt.
+> Completed tasks queue is emptied.
