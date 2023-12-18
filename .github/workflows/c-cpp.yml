@@ -1,0 +1,35 @@
+name: Round-Robin Scheduler CI
+
+on: [push]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install build dependencies
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Compile the Scheduler program
+      run: gcc Scheduler.c -o Scheduler.exe
+
+    - name: Run Scheduler with input1.txt
+      run: ./Scheduler.exe < input1.txt > out1.txt
+
+    - name: Run Scheduler with input2.txt
+      run: ./Scheduler.exe < input2.txt > out2.txt
+
+    - name: Upload out1.txt as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: output1
+        path: out1.txt
+
+    - name: Upload out2.txt as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: output2
+        path: out2.txt
